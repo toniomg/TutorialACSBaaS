@@ -15,6 +15,7 @@
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
 
+//Put your key here
 #define COCOAFISH_APP_KEY @""
 
 - (void)dealloc
