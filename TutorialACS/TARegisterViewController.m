@@ -66,7 +66,7 @@
 {
     
     NSMutableDictionary *paramDict = [NSMutableDictionary dictionaryWithCapacity:3];
-    [paramDict setObject:self.userRegisterTextField.text forKey:KEY_USER];    
+    [paramDict setObject:self.userRegisterTextField.text forKey:KEY_USERNAME];
     [paramDict setObject:self.passwordRegisterTextField.text forKey:KEY_PASSWORD];   
     [paramDict setObject:self.passwordRegisterTextField.text forKey:KEY_PASSWORD_CONFIRMATION]; 
     CCRequest *request = [[[CCRequest alloc] initWithDelegate:self httpMethod:@"POST" baseUrl:URL_CREATE_USER paramDict:paramDict] autorelease];
